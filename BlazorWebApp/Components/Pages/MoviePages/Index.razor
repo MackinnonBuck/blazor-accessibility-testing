@@ -1,0 +1,17 @@
+@page "/movies"
+
+@using Microsoft.EntityFrameworkCore
+@using Microsoft.AspNetCore.Components.QuickGrid
+@using BlazorWebApp.Models
+@inject IDbContextFactory<BlazorWebApp.Data.ApplicationDbContext> DbFactory
+
+<PageTitle>Index</PageTitle>
+
+<h1>Index</h1>
+
+<p>
+    <a href="movies/create">Create New</a>
+</p>
+
+<MovieGrid @rendermode="InteractiveServer" />
+
