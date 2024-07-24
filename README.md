@@ -2,6 +2,13 @@
 
 This repo contains scripts to automatically generate variations of ASP.NET project templates for the purposes of validating accessibility. Each script performs a series of edits to automate steps that mimic each framework's "Getting started" tutorial.
 
+A generated project can be run locally by running the following from the project's folder:
+
+```PowerShell
+dotnet ef database update
+dotnet run
+```
+
 Generated template variations are included in this repo. To regenerate a template, run the script in the `scripts` folder that does so. For example, from the repo root:
 
 ```PowerShell
