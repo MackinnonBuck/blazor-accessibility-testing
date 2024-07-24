@@ -269,7 +269,6 @@ try {
         -FilePath ".\Components\Layout\NavMenu.razor" `
         -OldString $NavMenuModelPageLinkLandmark `
         -NewString $NavMenuModelPageLink
-    $SeedDataClassFileContent | Out-File -FilePath ".\Data\SeedData.cs"
 } finally {
     $PrevPWD | Set-Location
 }
